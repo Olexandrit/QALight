@@ -2,13 +2,13 @@ print("Lesson2")
 
 from time import time as t
 
-n = range(10**4)
+n = range(10 ** 4)
 
 t1 = t()
 l1 = []
 for i in n:
-  l1.append(i)
-print("l1=",t()-t1)
+    l1.append(i)
+print("l1=", t() - t1)
 
 # t2 = t()
 # l2 = []
@@ -23,19 +23,19 @@ print("l1=",t()-t1)
 t1 = t()
 d1 = {}
 for i in n:
-  d1[i]=1
+    d1[i] = 1
 # print(d1)
-print("d1=",t()-t1)
+print("d1=", t() - t1)
 
 t3 = t()
 for i in n:
-  -1 in l1
-print("fl1=",t()-t3)
+    -1 in l1
+print("fl1=", t() - t3)
 
 t4 = t()
 for i in n:
-  -1 in d1
-print("fd1=",t()-t4)
+    -1 in d1
+print("fd1=", t() - t4)
 
 # list1 = []
 # list2 = []

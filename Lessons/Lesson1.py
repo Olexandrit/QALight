@@ -1,79 +1,80 @@
-#1Lesson
+# 1Lesson
 # from decimal import Decimal as D
 
 # d = {'test':[44,77],1:1}
 # print(d['test'][1]/7)
 
 apple = {
-  "code": 1,
-  "content": {
-    "text": "apple",
-    "changedText": "apple",
-    "tpl_name": "one_plus_word",
-    "records": {
-      "words_additions": [
-        {
-          "name": "apple watch",
-          "href": "https://rozetka.com.ua/ua/search/?text=apple+watch"
+    "code": 1,
+    "content": {
+        "text": "apple",
+        "changedText": "apple",
+        "tpl_name": "one_plus_word",
+        "records": {
+            "words_additions": [
+                {
+                    "name": "apple watch",
+                    "href": "https://rozetka.com.ua/ua/search/?text=apple+watch"
+                },
+                {
+                    "name": "apple iphone 7",
+                    "href": "https://rozetka.com.ua/ua/search/?text=apple+iphone+7"
+                },
+                {
+                    "name": "apple airpods",
+                    "href": "https://rozetka.com.ua/ua/search/?text=apple+airpods"
+                },
+                {
+                    "name": "apple iphone",
+                    "href": "https://rozetka.com.ua/ua/search/?text=apple+iphone"
+                },
+                {
+                    "name": "apple tv",
+                    "href": "https://rozetka.com.ua/ua/search/?text=apple+tv"
+                }
+            ],
+            "cats_searches": [
+                {
+                    "id": "80004",
+                    "top_id": "80253",
+                    "name": "в категорії <span class='bold'> Ноутбуки</span>",
+                    "href": "https://rozetka.com.ua/ua/search/?text=apple&section_id=80004&redirected=1"
+                },
+                {
+                    "id": "80027",
+                    "top_id": "4627949",
+                    "name": "в категорії <span class='bold'> Навушники</span>",
+                    "href": "https://rozetka.com.ua/ua/search/?text=apple&section_id=80027&redirected=1"
+                },
+                {
+                    "id": "651392",
+                    "top_id": "4627949",
+                    "name": "в категорії <span class='bold'> Смарт-годинники</span>",
+                    "href": "https://rozetka.com.ua/ua/search/?text=apple&section_id=651392&redirected=1"
+                }
+            ]
         },
-        {
-          "name": "apple iphone 7",
-          "href": "https://rozetka.com.ua/ua/search/?text=apple+iphone+7"
-        },
-        {
-          "name": "apple airpods",
-          "href": "https://rozetka.com.ua/ua/search/?text=apple+airpods"
-        },
-        {
-          "name": "apple iphone",
-          "href": "https://rozetka.com.ua/ua/search/?text=apple+iphone"
-        },
-        {
-          "name": "apple tv",
-          "href": "https://rozetka.com.ua/ua/search/?text=apple+tv"
-        }
-      ],
-      "cats_searches": [
-        {
-          "id": "80004",
-          "top_id": "80253",
-          "name": "в категорії <span class='bold'> Ноутбуки</span>",
-          "href": "https://rozetka.com.ua/ua/search/?text=apple&section_id=80004&redirected=1"
-        },
-        {
-          "id": "80027",
-          "top_id": "4627949",
-          "name": "в категорії <span class='bold'> Навушники</span>",
-          "href": "https://rozetka.com.ua/ua/search/?text=apple&section_id=80027&redirected=1"
-        },
-        {
-          "id": "651392",
-          "top_id": "4627949",
-          "name": "в категорії <span class='bold'> Смарт-годинники</span>",
-          "href": "https://rozetka.com.ua/ua/search/?text=apple&section_id=651392&redirected=1"
-        }
-      ]
-    },
-    "count": 8,
-    "total_count": 0,
-    "page": 0,
-    "start": 0,
-    "sections_menu": [
+        "count": 8,
+        "total_count": 0,
+        "page": 0,
+        "start": 0,
+        "sections_menu": [
 
-    ],
-    "move_to_category": "Перейти в категорію",
-    "price_with_promo": "Ціна з промокодом",
-    "sudg_noth_to_find": "По вашому запиту нічого не знайдено. <nobr>Уточніть свій запит",
-    "all_find_result": "Всі результати пошуку",
-    "currency": "грн"
-  }
+        ],
+        "move_to_category": "Перейти в категорію",
+        "price_with_promo": "Ціна з промокодом",
+        "sudg_noth_to_find": "По вашому запиту нічого не знайдено. <nobr>Уточніть свій запит",
+        "all_find_result": "Всі результати пошуку",
+        "currency": "грн"
+    }
 }
 
-l_apple = apple["content"]["records"]["words_additions"]
+l_apple = apple["content"]
+# ["records"]["words_additions"]
 
-new_list = [i['name'] for i in l_apple]
+# new_list = [i['name'] for i in l_apple]
 
-names_goods = ", ".join(new_list)
+# names_goods = ", ".join(new_list)
 # print(apple["content"]["records"]["words_additions"][0]["name"])
 
 # n = '+380501122333'

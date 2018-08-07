@@ -1,11 +1,23 @@
-import Lessons.Lesson1 as Lesson1
-import Lessons.Lesson2 as Lesson2
-import Lessons.Lesson3 as Lesson3
-import Lessons.Lesson4 as Lesson4
-import Lessons.Lesson5 as Lesson5
-import Lessons.Lesson6 as Lesson6
-import Lessons.Lesson7 as Lesson7
-import Lessons.Lesson8 as Lesson8
+import sys
+import os
+
+# sys.path.append(os.path.abspath("Lessons,HomeWork"))
+from HomeWork import qe
+
+# sys.path.append(os.path.abspath("HomeWork"))
+
+# import Lesson1
+# import Lesson2
+# import Lesson3
+# import Lesson4
+# import Lesson5
+# import Lesson6
+# import Lesson7
+# import Lesson8
+
+# import HW1
+
+qe(1,-8,12)
 
 # d_l = dir(Lesson1)
 # print("input= ",d_l)
@@ -18,4 +30,4 @@ import Lessons.Lesson8 as Lesson8
 #     newlist.append(i)
 
 # print("find = ",Lesson1.names_goods)
-Lesson2
+# Lesson2

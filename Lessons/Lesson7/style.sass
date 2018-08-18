@@ -1,0 +1,39 @@
+
+.div
+    color: green
+    
+    p
+        color: red
+
+img.cl
+    color: green
+    
+$primary-color: #333
+
+div
+    color: $primary-color
+    p
+        color: red
+
+
+div
+    color: $primary-color
+    p
+        color: lighten($primary-color,20%)
+
+$c: #333
+
+=bradius($property)
+    border-radius: $property
+    -moz-border-radius: $property
+    -o-border-radius: $property
+    -ms-border-radius: $property
+    -webkit-border-radius: $property
+    border: 0px solid $c
+
+div
+    color: $c
+    p
+        color: lighten($c, 20%)
+        +bradius(20px)
+

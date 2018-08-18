@@ -1,0 +1,39 @@
+.div {
+  color: green;
+}
+.div p {
+  color: red;
+}
+
+img.cl {
+  color: green;
+}
+
+div {
+  color: #333;
+}
+div p {
+  color: red;
+}
+
+div {
+  color: #333;
+}
+div p {
+  color: #666666;
+}
+
+div {
+  color: #333;
+}
+div p {
+  color: #666666;
+  border-radius: 20px;
+  -moz-border-radius: 20px;
+  -o-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -webkit-border-radius: 20px;
+  border: 0px solid #333;
+}
+
+/*# sourceMappingURL=style.css.map */

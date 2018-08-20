@@ -4,8 +4,8 @@ import redis
 
 r_server = redis.Redis(host="127.0.0.1",port=6379)
 
-l=[""]
-l2 = [""]
+# l=[""]
+# l2 = [""]
 
 # @route('/hello/<name>')
 # def index(name):
@@ -16,8 +16,10 @@ def create_tr_td():
     tr_td1_td2 = ""
     for key in r_server.scan_iter("set*"):
     
-        n_key = str(key).replace("b","")
-        n_key = n_key.replace("'","")
+        # n_key = str(key).replace("b","")
+        # n_key = n_key.replace("'","")
+        
+        n_key = str(key).decode('utf-8')
         
         tr_td1_td2 = tr_td1_td2 + find_val(n_key)
     
@@ -26,6 +28,7 @@ def create_tr_td():
 def find_val(key):
     
     val = r_server.smembers(key)
+    print(val)
     
     tr_td1_td2 = '<tr><td>{}</td><td>{}</td></tr>'.format(key,val)
     

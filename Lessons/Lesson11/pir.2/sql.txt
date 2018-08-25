@@ -1,0 +1,65 @@
+sqlite3 my.db
+.mode column
+.headers on
+.tables
+
+create table Product (model varchar(50) primary key, maker varchar(50), type varchar(50));
+select type, name, tbl_name, sql from sqlite_master order by type;
+insert into Product (model, maker, type) values ('1232', 'A', 'PC');
+insert into Product (model, maker, type) values ('1233', 'A', 'PC');
+insert into Product (model, maker, type) values ('1276', 'A', 'Printer');
+insert into Product (model, maker, type) values ('1298', 'A', 'Laptop');
+insert into Product (model, maker, type) values ('1401', 'A', 'Printer');
+insert into Product (model, maker, type) values ('1408', 'A', 'Printer');
+insert into Product (model, maker, type) values ('1752', 'A', 'Laptop');
+insert into Product (model, maker, type) values ('1121', 'B', 'PC');
+insert into Product (model, maker, type) values ('1750', 'B', 'Laptop');
+insert into Product (model, maker, type) values ('1321', 'C', 'Laptop');
+insert into Product (model, maker, type) values ('1288', 'D', 'Printer');
+insert into Product (model, maker, type) values ('1433', 'D', 'Printer');
+insert into Product (model, maker, type) values ('1260', 'E', 'PC');
+insert into Product (model, maker, type) values ('1434', 'E', 'Printer');
+insert into Product (model, maker, type) values ('2112', 'E', 'PC');
+insert into Product (model, maker, type) values ('2113', 'E', 'PC');
+select * from Product;
+
+create table PC (code int primary key, model varchar(50), speed smallint, ram smallint, hd real, cd varchar(10), price money);
+insert into PC (code, model, speed, ram, hd, cd, price) values (1, '1232', 500, 64, 5.0, '12x', 600.0000);
+insert into PC (code, model, speed, ram, hd, cd, price) values (10, '1260', 500, 32, 10.0, '12x', 350.0000);
+insert into PC (code, model, speed, ram, hd, cd, price) values (11, '1233', 900, 128, 40.0, '40x', 980.0000);
+insert into PC (code, model, speed, ram, hd, cd, price) values (12, '1233', 800, 128, 20.0, '50x', 970.0000);
+insert into PC (code, model, speed, ram, hd, cd, price) values (2, '1121', 750, 128, 14.0, '40x', 850.0000);
+insert into PC (code, model, speed, ram, hd, cd, price) values (3, '1233', 500, 64, 5.0, '12x', 600.0000);
+insert into PC (code, model, speed, ram, hd, cd, price) values (4, '1121', 600, 128, 14.0, '40x', 850.0000);
+insert into PC (code, model, speed, ram, hd, cd, price) values (5, '1121', 600, 128, 8.0, '40x', 850.0000);
+insert into PC (code, model, speed, ram, hd, cd, price) values (6, '1233', 750, 128, 20.0, '50x', 950.0000);
+insert into PC (code, model, speed, ram, hd, cd, price) values (7, '1232', 500, 32, 10.0, '12x', 400.0000);
+insert into PC (code, model, speed, ram, hd, cd, price) values (8, '1232', 450, 64, 8.0, '24x', 350.0000);
+insert into PC (code, model, speed, ram, hd, cd, price) values (9, '1232', 450, 32, 10.0, '24x', 350.0000);
+
+
+create table Laptop (code int, model varchar(50), speed smallint, ram smallint, hd real, price money, screen tinyint);
+insert into Laptop (code, model, speed, ram, hd, price, screen) values (1, '1298', 350, 32, 4.0, 700.0000, 11);
+insert into Laptop (code, model, speed, ram, hd, price, screen) values (2, '1321', 500, 64, 8.0, 970.0000, 12);
+insert into Laptop (code, model, speed, ram, hd, price, screen) values (3, '1750', 750, 128, 12.0, 1200.0000, 14);
+insert into Laptop (code, model, speed, ram, hd, price, screen) values (4, '1298', 600, 64, 10.0, 1050.0000, 15);
+insert into Laptop (code, model, speed, ram, hd, price, screen) values (5, '1752', 750, 128, 10.0, 1150.0000, 14);
+insert into Laptop (code, model, speed, ram, hd, price, screen) values (6, '1298', 450, 64, 10.0, 950.0000, 12);
+
+create table Printer (code int, model varchar(50), color char(1), type varchar(10), price money);
+insert into Printer (code, model, color, type, price) values (1, '1276', 'n', 'Laser', 400.0000);
+insert into Printer (code, model, color, type, price) values (2, '1433', 'y', 'Jet', 270.0000);
+insert into Printer (code, model, color, type, price) values (3, '1434', 'y', 'Jet', 290.0000);
+insert into Printer (code, model, color, type, price) values (4, '1401', 'n', 'Matrix', 150.0000);
+insert into Printer (code, model, color, type, price) values (5, '1408', 'n', 'Matrix', 270.0000);
+insert into Printer (code, model, color, type, price) values (6, '1288', 'n', 'Laser', 400.0000);
+
+create table ProductApple (model varchar(50) primary key, maker varchar(50), type varchar(50));
+insert into ProductApple (model, maker, type) values ('1001', 'A', 'Apple6');
+insert into ProductApple (model, maker, type) values ('1002', 'A', 'Apple7');
+insert into ProductApple (model, maker, type) values ('1003', 'A', 'AppleX');
+insert into ProductApple (model, maker, type) values ('1004', 'B', 'Apple8');
+insert into ProductApple (model, maker, type) values ('1005', 'C', 'Apple9');
+insert into ProductApple (model, maker, type) values ('1006', 'C', 'Apple9');
+
+.quit

@@ -1,0 +1,45 @@
+<html>
+<head>
+    <title>PC</title>
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/dataTables.bootstrap.min.css">
+    <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1> </h1>
+        <ol class="breadcrumb">
+            <li><a href="/">Home</a></li>
+            <li class="active">PC</li>
+        </ol>
+        <h1>PC</h1>
+        <table id="example" class="table table-striped table-bordered" cellspacing="0" width="100%">
+            <thead>
+                <tr>
+                    <th>Code</th>
+                    <th>Model</th>
+                    <th>Speed</th>
+                    <th>RAM</th>
+                    <th>HD</th>
+                    <th>CD</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr tal:repeat="pc pcs">
+                    <td>${pc.code}</td>
+                    <td>${pc.model}</td>
+                    <td>${pc.speed}</td>
+                    <td>${pc.ram}</td>
+                    <td>${pc.hd}</td>
+                    <td>${pc.cd}</td>
+                    <td>${pc.price}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+<script type="text/javascript">$('#example').DataTable();</script>
+</body>
+</html>

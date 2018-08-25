@@ -1,0 +1,11 @@
+<html>
+<head>
+    <title>Projector</title>
+</head>
+<body>
+<ul>
+    <li><a href="/">Home</a></li>
+    <li><a href="/pc">PC</a></li>
+</ul>
+</body>
+</html>
